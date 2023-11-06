@@ -93,7 +93,7 @@ sudo apt-get install python3-feedparser
 
 Create newsrss.py
 ```
-cd bindings/python/samples
+cd rpi-rgb-led-matrix/bindings/python/samples
 sudo nano newsrss.py
 ```
 

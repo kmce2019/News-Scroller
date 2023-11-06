@@ -81,19 +81,23 @@ Follow the guide on Github for Authentication Processes!
 
 ```
 cd rpi-rgb-led-matrix
-make build-pythong PYTHON=$(Which python 3)
+make build-python PYTHON=$(Which python 3)
 sudo make install-python
-cd bindings/python/smaples
 ```
 Any dependencies not installed above can be installed using pip
 ```
-pip install (missing dependency)
+sudo apt-get install python3-pil
+sudo apt-get install python3-feedparser
+
 ```
 
 Create newsrss.py
 ```
+cd bindings/python/samples
 sudo nano newsrss.py
+```
 
+```
 #!/usr/bin/env python
 # Display a runtext with double-buffering.
 from samplebase import SampleBase
